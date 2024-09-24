@@ -1,0 +1,25 @@
+.pageWrapper {
+    box-sizing: border-box; 
+    background-color: #EBE5DD;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.title {
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.articleGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
