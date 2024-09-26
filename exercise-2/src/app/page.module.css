@@ -23,3 +23,9 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* article page */
+.articlePageHeaderWrapper{
+    background-size: cover;
+    background-image: url('https://unsplash.com/photos/silhouette-photography-of-person-oMpAz-DN-9I');
+}
