@@ -1,15 +1,20 @@
-import styles from "./page.module.css";
-import data from "./data.json";
-import ArticleCard from "./components/articleCard";
+import ArticleCard from './components/articleCard';
+import articles from './data.json';
 
 export default function Home() {
   return (
-    <main className={styles.pageWrapper}>
-      <h1 className={styles.title}>Article Listing</h1>
-      <div className={styles.articleGrid}>
-        {data.map((article) => (
-          <ArticleCard param={article} />
-        ))}
+    <main className="bg-white min-h-screen">
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold mb-8 text-black">Daily News</h1>
+        
+        <div className="space-y-6">
+          {articles.map((article) => (
+            <ArticleCard 
+              key={article.id} 
+              params={article}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );
